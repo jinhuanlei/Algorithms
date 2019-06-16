@@ -70,8 +70,9 @@ class LinkedQueue {
 #### Use Array
 Implement with array. We need to expand extra functions to extend the array because the size of the array is fixed.
 
-offer : O(1) worst O(N)
-poll : O(1)
+* offer : O(1) worst O(N)
+
+* poll : O(1)
 
 Code:
 ```java

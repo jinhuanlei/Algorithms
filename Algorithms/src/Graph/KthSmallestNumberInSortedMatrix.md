@@ -17,7 +17,10 @@ public class Solution {
     PriorityQueue<Element> minHeap = new PriorityQueue<>(new Comparator<Element>(){
       @Override
       public int compare(Element e1, Element e2){
-        return e1.val - e2.val;
+        if(e1.val == e2.val){
+          return 0;
+        }
+        return e1.val < e2.val ? -1 : 1; 
       }
     });
     boolean[][] visited = new boolean[matrix.length][matrix[0].length];

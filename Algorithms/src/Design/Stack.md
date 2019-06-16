@@ -5,9 +5,9 @@ Maintain a head.
 
 ## Using a Linked List
 
-offer : O(1)
+* offer : O(1)
 
-poll : O(1)
+* poll : O(1)
 
 缺点是有额外的overhead, 空间开销会变大
 
@@ -68,11 +68,11 @@ class LinkedStack {
 
 ## Using a Array
 
-offer : O(1) Worst O(N)
+* offer : O(1) Worst O(N)
 
 假入数组满了, 重新创建一个1.5倍大的数组. 
 
-poll : O(1)
+* poll : O(1)
 
 Time analysis : (N + 1 + 1 + 1 ... + 1)  / (0.5 * N) = 1.5N / 0.5N = 3 = O(1)
 
