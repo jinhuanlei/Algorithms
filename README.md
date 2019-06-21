@@ -1,7 +1,7 @@
 ## Algorithms and Data Structures
 Implement the common algorithms and data structures and analysing its Time/ Space complexity. Try to find the optimal solution.
 
-#### Angorithms
+#### Algorithms
 1. Binary Search
 
 1. Tree
