@@ -19,6 +19,11 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
     1. Char Removal
         1. remove some particular chars from a string.
         1. remove all​ leading/trailing/duplicated​ empty spaces from a string.
+    1. De-duplication
+    1. SubString
+        1. Optimal Solution
+            * Rabin-Karp
+            * KMP
     
 
 
