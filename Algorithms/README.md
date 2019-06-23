@@ -15,6 +15,11 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
         1. BFS-2 (Best first search)
 1. Recursion
     1. DFS
+1. String
+    1. Char Removal
+        1. remove some particular chars from a string.
+        1. remove all​ leading/trailing/duplicated​ empty spaces from a string.
+    
 
 
 
@@ -25,3 +30,23 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
 1. Deque
 1. Heap(PriorityQueue)
 1. HashMap
+
+#### Interview Steps - CART
+1. Clarification
+    1. Object
+        * Null
+        * Empty
+    1. Collection / Array
+        * Sorted
+            * Ascending
+            * Descending
+        * Unsorted
+        * Duplicate
+    1. String
+        * Leading, trailing spaces
+        * in place or not
+        * Duplicate Elements
+1. Assumption
+1. Result
+1. Testing
+
