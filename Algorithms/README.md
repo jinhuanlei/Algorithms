@@ -24,6 +24,13 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
         1. Optimal Solution
             * Rabin-Karp
             * KMP
+    1. String Reversal
+    1. String Replacement
+    1. String Shuffling
+    1. Permutation
+    1. Encoding / Decoding
+    1. Sliding Window
+    
     
 
 
