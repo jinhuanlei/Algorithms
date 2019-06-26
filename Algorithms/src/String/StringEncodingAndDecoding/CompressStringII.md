@@ -52,8 +52,14 @@ public class Solution {
   }
 
   public String encodeLongPattern(char[] arr, int index){
-      // assume I can get enough spaces 我算了个预计最大值, 不是很inplace hahahaha
-    char[] result = new char[(index + 1) * 2];
+    int newLength = index + 1;
+    // calculate new length
+    for(int x = 0; x <= index; x++){
+      if(Character.isLetter(arr[x]) && (x == index || Character.isLetter(arr[x + 1]))){
+        newLength += 1;
+      }
+    }
+    char[] result = new char[newLength];
     int slow = 1;
     int fast = 1;
     result[0] = arr[0];
@@ -74,5 +80,6 @@ public class Solution {
     return new String(result, 0, slow);
   }
 }
+
 
 ```
