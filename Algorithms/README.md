@@ -30,6 +30,13 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
     1. Permutation
     1. Encoding / Decoding
     1. Sliding Window
+1. Bit Operations
+
+    Can be solved by building blocks below
+
+    * Get kth bit   =>   (x >> k) & 1
+    * Set kth bit as 1  =>  x | (1 << k)
+    * Set kth bit as 0  =>  x & (~(1 << k))
     
     
 
