@@ -61,6 +61,7 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
             * Descending
         * Unsorted
         * Duplicate
+        * Contains target or not(search element)
     1. String
         * Leading, trailing spaces
         * in place or not
