@@ -67,6 +67,9 @@ public class Heap{
     }
 
     public void percolateDown(int index){
+        // last index is size - 1
+        // ((size - 1) - 1) / 2 
+        // 这是最后一个node的parent
         while(index <= size / 2 - 1){
             int left = index * 2 + 1;
             int right = index * 2 + 2;
