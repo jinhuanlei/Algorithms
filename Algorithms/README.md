@@ -68,5 +68,9 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
         * Duplicate Elements
 1. Assumption
 1. Result
+    1. Time Complexity
+        * Collections (Use different symbol M N to  represent)
+        * Graph Use V(Vertices) and E(Edge)
+        * Tree we need to consider balance tree or not(Worst case become a Linked List)
 1. Testing
 
