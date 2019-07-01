@@ -1,7 +1,7 @@
 ## Algorithms and Data Structures
-Implement the common algorithms and data structures and analysing its Time/ Space complexity. Try to find the optimal solution.
+Implement the common algorithms and data structures and analysing its Time/ Space complexity. Always try to find the optimal solution.
 
-#### Algorithms
+### Algorithms
 1. Binary Search
 
 1. Tree
@@ -14,7 +14,16 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
         1. BFS-1 (Breadth first search)
         1. BFS-2 (Best first search)
 1. Recursion
-    1. DFS
+    1. Math
+    1. 1D or 2D array
+        1. Eight queen or N queen
+    1. Linked List
+    1. String
+    1. Tree
+        1. Tricks
+            * What do you expect from your lchild/rchild ?
+            * What do you want to do in the current layer ?
+            * What do you want to report to your parent ?
 1. String
     1. Char Removal
         1. remove some particular chars from a string.
@@ -38,9 +47,6 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
     * Set kth bit as 1  =>  x | (1 << k)
     * Set kth bit as 0  =>  x & (~(1 << k))
     
-    
-
-
 
 #### Data structures
 1. Linked List
