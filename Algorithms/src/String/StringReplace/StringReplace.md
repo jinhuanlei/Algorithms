@@ -22,6 +22,7 @@ public class Solution {
 ```
 
 Solution 2 : In-place with two pointer
+
 Case 1 : long word => short word
 
 simple two pointer solution
