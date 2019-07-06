@@ -47,6 +47,15 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
     * Set kth bit as 1  =>  x | (1 << k)
     * Set kth bit as 0  =>  x & (~(1 << k))
     
+1. Dynamic Programming
+
+和recursion相反, 把一个大问题通过比它小的问题来解决(类似数学归纳法)
+
+* Solutions
+    * Linear scan and look back
+    * 
+        
+    
 
 #### Data structures
 1. Linked List
