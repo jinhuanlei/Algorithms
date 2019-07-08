@@ -51,9 +51,9 @@ Implement the common algorithms and data structures and analysing its Time/ Spac
 
 和recursion相反, 把一个大问题通过比它小的问题来解决(类似数学归纳法)
 
-* Solutions
+* Solutions for 1D problems
     * Linear scan and look back
-    * 
+    * 左大段,右小段
         
     
 
