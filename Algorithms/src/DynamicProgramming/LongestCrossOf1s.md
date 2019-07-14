@@ -31,7 +31,7 @@ Solution 2 : DP
     pre processing, 
     left to right, right to left, up to down, down to up with the maxsize of 1s
     M[i][j] current max length of 1s
-    indextuon rule: max(globalMax, for for min(four memory array[x][y]))
+    indextuon rule: for for( max(globalMax, min(four memory array[x][y])) )
     Time : N ^ 2
     space N ^ 2
         
