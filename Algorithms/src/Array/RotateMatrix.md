@@ -22,6 +22,8 @@ after rotation is
 
 #### Idea
 
+每层一个for循环，都用一个temp保存初始值， 每次改变四个值。每一次递归把最外面一层全部换完。
+
 Time N ^ 2
 
 Space : N (can optimized to 1)
