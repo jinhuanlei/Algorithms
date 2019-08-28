@@ -50,7 +50,7 @@ Solution
 
 要maintain一个List, 来记录path, 然后从后往前计算当path等于target的时候 return true
 
-Time: O(N)
+Time: O(N ^ Length)
 Space: O(N)
 
 ```java
@@ -87,6 +87,50 @@ public class Solution {
     }
     path.remove(path.size() - 1);
     return false;
+  }
+}
+
+```
+
+Solution2 
+
+Maintain 一个Set用来记录遍历过的List， 有点类似与2 Sum 的感觉
+
+O(N)
+
+```java
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public boolean exist(TreeNode root, int target) {
+  	Set<Integer> hashSet = new HashSet<>();
+    hashSet.add(0);
+  	return existHelper(root, target, 0, hashSet);
+  }
+
+  public boolean existHelper(TreeNode root, int target, int curSum, Set<Integer> hashSet){
+  	if(root == null){
+  		return false;
+  	}
+  	curSum += root.key;
+  	boolean isAdd = hashSet.add(curSum);
+  	if(hashSet.contains(curSum - target)){
+  		return true;
+  	}
+    boolean left = existHelper(root.left, target, curSum, hashSet);
+    boolean right = existHelper(root.right, target, curSum , hashSet);
+    if(isAdd){
+      hashSet.remove(curSum);
+    }
+  	return  left || right;
   }
 }
 
