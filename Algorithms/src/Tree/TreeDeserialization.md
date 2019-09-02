@@ -120,6 +120,54 @@ public class Solution {
 
 ```
 
+### Reconstruct Binary Tree With Levelorder And Inorder
+
+```java
+/**
+ * public class TreeNode {
+ *   public int key;
+ *   public TreeNode left;
+ *   public TreeNode right;
+ *   public TreeNode(int key) {
+ *     this.key = key;
+ *   }
+ * }
+ */
+public class Solution {
+  public TreeNode reconstruct(int[] inOrder, int[] levelOrder) {
+    Map<Integer, Integer> hashMap = new HashMap<>();
+    for(int x = 0; x < inOrder.length; x++){
+      hashMap.put(inOrder[x], x);
+    }
+    List<Integer> cur = new ArrayList<>();
+    for(int x : levelOrder){
+      cur.add(x);
+    }
+    return reconstructHelper(hashMap, cur);
+  }
+
+  public TreeNode reconstructHelper(Map<Integer, Integer> hashMap, List<Integer> cur){
+    if(cur.isEmpty()){
+      return null;
+    }
+    List<Integer> left = new ArrayList<>();
+    List<Integer> right = new ArrayList<>();
+    TreeNode root = new TreeNode(cur.get(0));
+    for(int x = 1; x < cur.size(); x++){
+      if(hashMap.get(cur.get(x)) < hashMap.get(root.key)){
+        left.add(cur.get(x));
+      }else{
+        right.add(cur.get(x));
+      }
+    }
+    root.left = reconstructHelper(hashMap, left);
+    root.right = reconstructHelper(hashMap, right);
+    return root;
+  }
+}
+```
+
+
 
 
 
